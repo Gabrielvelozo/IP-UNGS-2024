@@ -1,15 +1,13 @@
 """
-Realizar un programa que sume los primeros n números impares. (n lo indica el usuario) 
-
+a) Hacer un programa que muestre, mediante un ciclo, los números desde el 15 hasta
+el 6 pero salteando de a tres (15, 12, 9, 6).
 """
-n=int(input("Ingrese un número: "))
+i=15
+while i>=6:
+    print(f"{i}",end=" ")
+    i-=3
+    
+print("\n")
 
-i=1
-suma=0
-contador=0
-while contador<n:
-    suma+=i
-    i+=2
-    contador+=1
-print(f"La suma de los primeros {n} números impares es {suma}")
-
+for num in range(15,5,-3):
+    print(num, end=" ")

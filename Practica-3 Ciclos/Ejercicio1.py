@@ -1,22 +1,19 @@
 """
-Realizar un programa que solicite dos números y realice la división entre ellos, no se debe permitir que el denominador sea 0.
+a) Hacer un programa que muestre, mediante un ciclo, los primeros 5 números naturales (1, 2, 3, 4 y 5)
 """
+i=1
+while i<=5:
+    print(f"{i}",end=" ")
+    i+=1
 
-#Inicia la condición
-denominador=0
+"""
+b) Hacer un programa que permita al usuario elegir un número n y luego muestre los
+primeros n números naturales (1, 2, · · · , n).
+"""
+n=int(input("Ingrese un número: "))
 
-#Aseguramos que al menos 1 vez va entrar al ciclo while.
-while denominador==0:
-    #Pedimos numerador y denominador.
-    numerador=int(input("Ingrese el numerador: "))
-    denominador=int(input("Ingrese el denominador: "))
-    #Valida si denominador es igual a 0.
-    if denominador ==0:
-        print("El denominador no puede ser 0.\nIngrese otro número.")
-    #sale del ciclo
-
-resultado= numerador/denominador
-#imprimimos
-print(f"El resultado es {resultado}")
-    
-
+i=1
+while i<=n:
+    # END " " PARA PONERLOS DE LADO.
+    print(f"{i}",end=" ")
+    i+=1

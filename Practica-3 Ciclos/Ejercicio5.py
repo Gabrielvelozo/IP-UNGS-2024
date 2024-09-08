@@ -1,12 +1,13 @@
 """
-Realizar un programa que sume los primeros números impares hasta n. (n lo indica el usuario) 1+3+5+…+n=
-
+a) Hacer un programa que muestre, mediante un ciclo, los números desde el 8 hasta el
+3 (8, 7, 6, 5, 4, 3).
 """
-n=int(input("Ingrese un número: "))
+i=8 
+while i>=3:
+    print(f"{i}",end=" ")
+    i-=1
 
-i=1
-suma=0
-while i<=n:
-    suma+=i
-    i+=2
-print(f"La suma de los primeros {n} números impares son {suma}")
+print("\n")   
+
+for num in range(8,2,-1):
+    print(num,end=" ")
