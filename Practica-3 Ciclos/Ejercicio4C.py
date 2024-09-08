@@ -10,11 +10,12 @@ m=int(input("ingrese un número m: "))
 p=int(input("ingrese un número p: "))
 i=n
 
-"""while i<=m:
+while i<=m:
     print(f"{i}",end=" ")
-    i+=p"""
+    i+=p
 
 print("\n***************\n")
 
 for num in range(i,m+1,p):
     print(num,end=" ")
+

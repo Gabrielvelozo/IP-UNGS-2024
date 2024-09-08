@@ -4,6 +4,13 @@ b) Hacer un programa que permita al usuario elegir un número n y luego muestre 
 """
 n = int(input("Ingresa un número entero: "))
 
+for num in range(1,6):
+    print(f"{n+num}",end=" ")
+
+
+print("\n")
+
+
 # Inicializar un contador para determinar cuántos números se han mostrado.
 contador = 0
 
