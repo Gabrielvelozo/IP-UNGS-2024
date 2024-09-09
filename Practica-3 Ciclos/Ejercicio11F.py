@@ -33,3 +33,4 @@ else:
                     contador_divisores -= 1
                 else:
                     print(divisor_actual,end=" ")
+            
