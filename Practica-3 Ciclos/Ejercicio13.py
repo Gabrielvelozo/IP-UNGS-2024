@@ -26,5 +26,5 @@ for i in range(1,m+1):
     # Acumula el valor de n.
     suma+=n"""
     
-print(f"RETORNAR: {n}")
+print(f"Número: {n}")
 

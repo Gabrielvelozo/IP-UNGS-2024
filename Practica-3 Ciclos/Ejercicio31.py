@@ -10,3 +10,14 @@ La clave se completará con 1 dígito generado aleatoriamente entre 0 y 9.
 Ejemplos: CLMN1 RVR*4 R***7
 
 """
+apellido= input("Ingrese su apellido: ")
+consonantes=""
+long_consonantes=len(consonantes)
+
+for char in apellido:
+    if char in "bcdfghjklmnñpqrstvwxyz":
+            consonantes+=char
+print(consonantes,end="aaca")
+ 
+
+

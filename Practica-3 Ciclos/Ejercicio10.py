@@ -5,7 +5,7 @@ menores a n. Por ejemplo, si el usuario ingresa 20, el programa mostrará: 1 2 4
 """
 n=int(input("ingrese un número n: "))
 
-i=1
+i=0
 while i**2<n:
-    print(f"{i**2}",end=" ")
+    print(f"{2**i}",end=" ")
     i+=1
