@@ -9,3 +9,5 @@ suma=0
 for i in range(1,n+1):
     suma+=1/(i**2) # Acumula valores.
     print(f"{suma}",end=" ")
+
+# ¿A qué valor se va acercando la suma del inciso anterior a medida que utilizamos un valor alto de n?  pi**2/6

@@ -10,14 +10,20 @@ La clave se completará con 1 dígito generado aleatoriamente entre 0 y 9.
 Ejemplos: CLMN1 RVR*4 R***7
 
 """
+import random # Importar libreria.
 apellido= input("Ingrese su apellido: ")
-consonantes=""
-long_consonantes=len(consonantes)
+consonantes="" # Agrupar constantes.
 
 for char in apellido:
-    if char in "bcdfghjklmnñpqrstvwxyz":
-            consonantes+=char
-print(consonantes,end="aaca")
- 
+
+    if not char in  "aeiou" and len(consonantes)<4: # Mientras no sea vocal y menor a 4.
+        consonantes+=char
+
+while len(consonantes)<4: # Si es menor a 4, agregar "*".
+    consonantes+="*"
+
+clave=consonantes+str(random.randrange(10)) # Sumar un numero random de 0,9.
+print(clave)
+    
 
 
