@@ -10,6 +10,7 @@ que muestre la aproximación de ln(2) con esa cantidad de términos.
 terminos=int(input("Ingrese la cantidad de terminos a sumar: "))
 suma=0
 for i in range(1,terminos+1):
-    suma+= (-1)**(i+1)/i # (-1)**(n+1) / n
-    print(suma)
+    termino= (-1)**(i+1)/i # (-1)**(n+1) / n
+    suma+=termino
+    print(f"Termino: {termino} | Suma: {suma}")
 

@@ -1,0 +1,16 @@
+"""
+El número 1/4π se puede aproximar de la siguiente manera:
+ 1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11 + 1/13 - 1/15
+b) ¿A partir de cuántos términos el valor alcanzado está a menos de 0.01 del valor que
+da la calculadora?
+"""
+import math
+e=float(input("ingrese un número: "))
+suma=0
+i=1
+while abs((1/4)*math.pi-suma)>e:
+    suma+= (-1)**(i+1)/(2*i-1)
+    print(f"- {(1/4)*math.pi-suma}") # Validar lo resta en cada iteracion.
+    i+=1
+
+print(f"A partir del término {i-1}, el valor es menor a 0.1 : {(1/4)*math.pi-suma}")
