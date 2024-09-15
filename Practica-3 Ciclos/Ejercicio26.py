@@ -6,7 +6,7 @@ la escriba en el centro de la pantalla
 us=input("Ingrese una palabra. ")
 cantidad_palabra= len(us)
 
-imprimir=(80-cantidad_palabra)//2
+imprimir=(160-cantidad_palabra)//2
 centrar=" " * imprimir + us
 print(centrar)
 

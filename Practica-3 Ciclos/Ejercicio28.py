@@ -10,6 +10,6 @@ apariciones=0
 for char in palabra:
     if char==letra:
         apariciones+=1
-print(f"Cantidad de veces la letra {letra}: {apariciones}")
+print(f"La letra {letra} se repite: {apariciones}")
 
 
