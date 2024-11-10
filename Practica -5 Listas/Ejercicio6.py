@@ -3,7 +3,7 @@
 def tieneRepetidos(lista):
     
     for i in range(len(lista)):
-        if lista[i] in lista[i+1]:
+        if lista[i] in lista[i+1:]:
             return True
     return False
 
