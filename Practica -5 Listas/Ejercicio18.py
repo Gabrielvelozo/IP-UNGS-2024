@@ -1,20 +1,19 @@
 #Definir una función que tome un entero n y devuelva los primeros n primos.
 
-def esPrimo(n):
-    for i in range(1,n+1):
-        if n%i==0:
-            return True
-    return False
+def numerosPrimos(num):
+    lista=[]
+    for i in range(1,num+1):
+        if num%i==0:
+            lista.append(i)
+    return lista
 
-def primerosPrimos(x):
+def primosPrimosDeN(num):
     primos=[]
-    numero=2
-    while len(primos)<x:
-        if esPrimo(numero):
-            primos.append(numero)
-        numero+=1
+    contador=1
+    while len(primos)<num:
+        if numerosPrimos(contador):
+            primos.append(contador)
+            contador+=1
+    return primos
 
-    return primerosPrimos
-
-num=10
-print(primerosPrimos(num))
+print(numerosPrimos(5))
